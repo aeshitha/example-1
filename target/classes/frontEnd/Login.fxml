@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="456.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontEnd.LoginController">
+   <children>
+      <Label fx:id="lblMain" alignment="CENTER" layoutY="20.0" prefWidth="457" style="-fx-background-color: royalblue;" textFill="#2f3640">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text layoutX="32.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="56.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtID" layoutX="137.0" layoutY="149.0" onKeyReleased="#txtIDOnKeyRelease" prefHeight="44.0" prefWidth="288.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="32.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="90.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="txtPassword" layoutX="137.0" layoutY="222.0" onKeyReleased="#txtPasswordOnKeyRelease" prefHeight="44.0" prefWidth="288.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <JFXButton fx:id="btnLogin" layoutX="165.0" layoutY="341.0" onKeyReleased="#btnLoginOnKeyRelease" onMouseClicked="#btnLoginOnMouseClicked" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: white;" text="LogIn">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnExite" layoutX="303.0" layoutY="341.0" onKeyReleased="#btnExiteOnKeyRelease" onMouseClicked="#btnExiteOnMouseClicked" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: white;" text="Exit">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="93.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Selection System" wrappingWidth="270.919921875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="206.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eshitha Aluthwala 艾西塔 191864124" wrappingWidth="224.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

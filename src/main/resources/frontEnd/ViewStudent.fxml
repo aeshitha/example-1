@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1280.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontEnd.ViewStudentController">
+   <children>
+      <JFXTextField fx:id="txtID" layoutX="242.0" layoutY="80.0" onKeyReleased="#txtIDOnKeyRelease" prefHeight="35.0" prefWidth="370.0" style="-fx-background-color: white;" />
+      <Text layoutX="54.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" wrappingWidth="179.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major" wrappingWidth="179.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="640.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enrolled Year" wrappingWidth="179.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtMajor" layoutX="242.0" layoutY="171.0" prefHeight="35.0" prefWidth="370.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtEnrolledYear" layoutX="828.0" layoutY="125.0" prefHeight="35.0" prefWidth="370.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtPN" layoutX="828.0" layoutY="80.0" prefHeight="35.0" prefWidth="370.0" style="-fx-background-color: white;" />
+      <Text layoutX="640.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasport Number" wrappingWidth="179.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtName" layoutX="242.0" layoutY="125.0" prefHeight="35.0" prefWidth="370.0" style="-fx-background-color: white;" />
+      <Text layoutX="54.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="179.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnCancel" layoutX="1117.0" layoutY="697.0" onAction="#btnCancelOnAction" prefHeight="50.0" prefWidth="149.0" style="-fx-background-color: white;" text="Cancel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tableCourseList" layoutX="54.0" layoutY="257.0" onKeyReleased="#tableCourseOnKeyRelease" onMouseClicked="#tableCourseListOnMouseClicked" prefHeight="335.0" prefWidth="1143.0" style="-fx-background-color: white;">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Course ID" />
+            <TableColumn prefWidth="423.0" text="Course Name" />
+            <TableColumn prefWidth="416.0" text="Teacher" />
+            <TableColumn prefWidth="228.0" text="Credit" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblMain" alignment="CENTER" layoutX="-2.0" layoutY="18.0" prefWidth="1280" style="-fx-background-color: royalblue;" textFill="#2f3640">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

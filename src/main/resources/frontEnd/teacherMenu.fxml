@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1280.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontEnd.TeacherMenuController">
+   <children>
+      <ImageView fitHeight="760.0" fitWidth="924.0" layoutX="3.0" layoutY="3.0">
+         <image>
+            <Image url="@teacher.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnAddCourse" layoutX="957.0" layoutY="183.0" onKeyReleased="#btnAddCourseOnKeyRelease" onMouseClicked="#btnAddCourseOnMouseClicked" prefHeight="94.0" prefWidth="302.0" style="-fx-background-color: white;" text="Add/Manage Courses">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAddUser" layoutX="957.0" layoutY="66.0" onKeyReleased="#btnAddUserOnKeyRelease" onMouseClicked="#btnAddUserOnMouseClicked" prefHeight="94.0" prefWidth="302.0" style="-fx-background-color: white;" text="Add/Mange User">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnViewCourse" layoutX="957.0" layoutY="300.0" onKeyReleased="#btnViewCourseOnKeyReleased" onMouseClicked="#btnViewCourseOnMouseClicked" prefHeight="94.0" prefWidth="302.0" style="-fx-background-color: white;" text="View Course Details">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnViewStd" layoutX="957.0" layoutY="418.0" onKeyReleased="#btnViewStdOnKeyRelease" onMouseClicked="#btnViewStdOnMouseClicked" prefHeight="94.0" prefWidth="302.0" style="-fx-background-color: white;" text="view student details">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnExite" layoutX="957.0" layoutY="628.0" onKeyReleased="#btnExiteOnKeyRelease" onMouseClicked="#btnExiteOnMouseClicked" prefHeight="94.0" prefWidth="302.0" style="-fx-background-color: white;" text="Exite">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblMain" alignment="CENTER" layoutX="-2.0" layoutY="-1.0" prefWidth="1280" style="-fx-background-color: royalblue;" textFill="#2f3640">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
